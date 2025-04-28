@@ -1,0 +1,21 @@
+#ifndef KOCSI_H
+#define KOCSI_H
+
+#include "DynArray.hpp"
+#include "jegy.h"
+
+class Kocsi {
+	int id, ferohely, kerekesszek, kerekpar;
+	DynArray<Jegy> jegyek;
+public:
+	Kocsi(int id = 0, int fh = 0, int ksz = 0, int kp = 0) : id(id), ferohely(fh), kerekesszek(ksz), kerekpar(kp), jegyek(DynArray<Jegy>()) {}
+	int getFerohely();
+	int getKerekesszek();
+	int getKerekpar();
+	int getId();
+	DynArray<Jegy> getJegyek();
+	void jegyHozzaad(Jegy& jegy);
+	friend std::ostream& operator<<(std::ostream& os, Kocsi& k);
+};
+
+#endif // !KOCSI_H

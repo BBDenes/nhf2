@@ -1,25 +1,48 @@
 #include <iostream>
+#include <fstream>
+#include "DynArray.hpp"
 #include "ido.h"
 #include "megallo.h"
+#include "vonat.h"
+#include "menu.h"
 
+//teszt1, Hozzáad 2 tesztvonatot a listához megállókkal és 2-2 kocsival
+void test1(DynArray<Vonat>& vonatok) {
+
+	//tesztadatok megadása
+
+	DynArray<Megallo> megallok1, megallok2;
+	DynArray<Kocsi> tesztKocsik;
+	megallok1 += Megallo("Szombathely", Ido(-1, -1), Ido(10, 20));
+	megallok1 += Megallo("BP_Kelenfold", Ido(14, 30), Ido(-1, -1));
+	megallok2 += Megallo("Nagykanizsa", Ido(-1, -1), Ido(12, 30));
+	megallok2 += Megallo("BP-Deli", Ido(16, 40), Ido(-1, -1));
+	tesztKocsik += Kocsi(411, 50, 0, 0);
+	tesztKocsik += Kocsi(412, 75, 2, 10);
+
+	vonatok += Vonat(925, "Savaria", tesztKocsik, megallok1);
+	vonatok += Vonat(854, "Topart", tesztKocsik, megallok2);
+
+	for (size_t i = 0; i < vonatok.len(); ++i) {
+		std::cout << vonatok[i] << std::endl;
+	}
+
+}
 
 int main(void) {
 
-	Ido i1(12, 21);
-	Ido i2(13, 42);
-	Ido i3;
-	i3 = (i1 + i2) - i2; //02:03 - 13:42
-	Ido i4(12, 21);
+	DynArray<Vonat> vonatok;
 
-	std::cout << i3 << std::endl;
-	std::cout << (i3 == i4) << std::endl;
+	//pár vonat hozzáadása fájlbeolvasás helyett
+	vonatok += Vonat(925, "Savaria");
+	vonatok += Vonat(854, "Topart");
 
-	Megallo m1("Budapest-Keleti");
+	test1(vonatok);
 
-	std::cout << m1 << std::endl;
+	fomenu(vonatok);
+	
+	for (size_t i = 0; i < vonatok.len(); ++i) {
+		std::cout << vonatok[i] << std::endl;
+	}
 
-	Megallo m2("Budapest-Kelenfold", Ido(-1, -1), Ido(16, 14));
-	std::cout << m2 << std::endl;
-
-	return 0;
 }

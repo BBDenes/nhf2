@@ -18,6 +18,27 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vonat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Kocsi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jegy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Megallo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ido.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ido.h">
@@ -26,10 +47,19 @@
     <ClInclude Include="megallo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DynArray.h">
+    <ClInclude Include="DynArray.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="jegy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kocsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vonat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

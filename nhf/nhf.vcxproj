@@ -127,13 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DynArray.cpp" />
+    <ClCompile Include="Ido.cpp" />
+    <ClCompile Include="Jegy.cpp" />
+    <ClCompile Include="Kocsi.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Megallo.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="vonat.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DynArray.h" />
+    <ClInclude Include="DynArray.hpp" />
     <ClInclude Include="ido.h" />
     <ClInclude Include="jegy.h" />
+    <ClInclude Include="kocsi.h" />
     <ClInclude Include="megallo.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="vonat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
