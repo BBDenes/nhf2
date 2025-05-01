@@ -1,2 +1,3 @@
-﻿  Kocsi.cpp
+﻿  main.cpp
+C:\Users\denes\Documents\prog\nhf2\nhf\DynArray.hpp(91,1): warning C4715: 'DynArray<Vonat>::keres<vonatId>': not all control paths return a value
   nhf.vcxproj -> C:\Users\denes\Documents\prog\nhf2\nhf\x64\Debug\nhf.exe

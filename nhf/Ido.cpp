@@ -1,4 +1,5 @@
 #include "ido.h"
+#include <iomanip>
 
 
 Ido& Ido::operator=(const Ido& i) {
@@ -39,4 +40,9 @@ int Ido::getPerc() const { return perc; }
 Ido Ido::get() const { return *this; }
 bool Ido::operator==(const Ido& rhs) const {
 	return (this->perc == rhs.perc && this->ora == rhs.ora);
+}
+
+std::ostream& operator<<(std::ostream& os, const Ido& ido) {
+	os << std::setw(2) << std::setfill('0') << ido.ora << ":" << std::setw(2) << std::setfill('0') << ido.perc;
+	return os;
 }

@@ -18,10 +18,7 @@ public:
 	Ido get() const;
 	bool operator==(const Ido& rhs) const;
 
-	friend std::ostream& operator<<(std::ostream& os, const Ido& ido) {
-		os << ido.ora << ":" << ido.perc;
-		return os;
-	}
+	friend std::ostream& operator<<(std::ostream& os, const Ido& ido);
 };
 
 #endif // !IDO_H

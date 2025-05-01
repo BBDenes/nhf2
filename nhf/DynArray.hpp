@@ -20,17 +20,6 @@ public:
 		}
 		return os;
 	}
-	friend std::istream& operator>>(std::istream& is, DynArray<T>& lista) {
-		size_t hossz;
-		is >> hossz;
-		lista.db = hossz;
-		lista.adat = new T*[hossz];
-		for (size_t i = 0; i < hossz; ++i) {
-			lista.adat[i] = new T();
-			lista.adat[i]->read(is);
-		}
-		return is;
-	}
 
 	void operator+=(const T& rhs) {
 		T** tmp = new T*[db + 1];
@@ -44,11 +33,11 @@ public:
 		++db;
 	}
 
-	T& operator[](int i) const {
+	T& operator[](size_t i) const {
 		return *adat[i];
 	}
 
-	//törli a megadott indexű elemet a listából
+	//törli a megadott indexű elemet a listából @param A törölni kívánt index
 	void torol(int index) {
 		T* tmp = new T*[db-1];
 		size_t uj_i = 0;
@@ -65,9 +54,6 @@ public:
 		adat = tmp;
 	}
 
-	void kezeles();
-
-	// Másoló konstruktor
 	DynArray(const DynArray& other) : db(other.db) {
 		adat = new T * [db];
 		for (size_t i = 0; i < db; ++i) {
@@ -85,6 +71,24 @@ public:
 			}
 		}
 		return *this;
+	}
+
+	bool includes(int id) {
+		for (size_t i = 0; i < db; i++)
+		{
+			if (adat[i]->getId() == id) return true;
+		}
+		return false;
+	}
+	template<typename P>
+	T& keres(P predicate) {
+		for (size_t i = 0; i < db; i++)
+		{
+			if (predicate(adat[i])) {
+				return *adat[i];
+			}
+		}
+		throw std::exception;
 	}
 
 	void clear() {

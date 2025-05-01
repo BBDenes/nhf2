@@ -5,6 +5,7 @@
 #include "vonat.h"
 
 void fomenu(DynArray<Vonat>& vonatok);
+void kezeles(DynArray<Vonat>& vonatok);
 
 #endif // !MENU_H
 

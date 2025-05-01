@@ -143,6 +143,7 @@
     <ClInclude Include="kocsi.h" />
     <ClInclude Include="megallo.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="predicates.h" />
     <ClInclude Include="vonat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

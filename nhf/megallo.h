@@ -4,8 +4,8 @@
 #include <string>
 
 class Megallo {
-	Ido erkezes, indulas;
 	std::string nev;
+	Ido erkezes, indulas;
 public:
 	Megallo(std::string nev = "") : nev(nev) {}
 	Megallo(std::string nev, Ido erk, Ido ind): nev(nev), erkezes(erk), indulas(ind){}

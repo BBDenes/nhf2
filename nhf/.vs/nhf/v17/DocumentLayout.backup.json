@@ -3,52 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:vonat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Kocsi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:Kocsi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\kocsi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:kocsi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:vonat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:DynArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\megallo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:megallo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Megallo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:Megallo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:DynArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\predicates.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:predicates.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:DynArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\jegy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:jegy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\megallo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:megallo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:DynArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:vonat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Megallo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|solutionrelative:Megallo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63007491-A2F0-4D2A-B589-DCC1C93533F7}|nhf.vcxproj|C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\ido.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -66,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,181 +67,153 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "kocsi.h",
-              "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\kocsi.h",
-              "RelativeDocumentMoniker": "kocsi.h",
-              "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\kocsi.h",
-              "RelativeToolTip": "kocsi.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Title": "predicates.h",
+              "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\predicates.h",
+              "RelativeDocumentMoniker": "predicates.h",
+              "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\predicates.h",
+              "RelativeToolTip": "predicates.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-27T21:34:50.897Z",
+              "WhenOpened": "2025-05-01T09:36:08.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "DynArray.cpp",
+              "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.cpp",
+              "RelativeDocumentMoniker": "DynArray.cpp",
+              "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.cpp",
+              "RelativeToolTip": "DynArray.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-28T11:02:42.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DynArray.hpp",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.hpp",
               "RelativeDocumentMoniker": "DynArray.hpp",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.hpp",
               "RelativeToolTip": "DynArray.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAtwDYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-27T20:18:04.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "jegy.h",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\jegy.h",
               "RelativeDocumentMoniker": "jegy.h",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\jegy.h",
               "RelativeToolTip": "jegy.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-27T19:38:06.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "vonat.h",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.h",
               "RelativeDocumentMoniker": "vonat.h",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.h",
               "RelativeToolTip": "vonat.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-27T19:37:59.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "vonat.cpp",
-              "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.cpp",
-              "RelativeDocumentMoniker": "vonat.cpp",
-              "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\vonat.cpp",
-              "RelativeToolTip": "vonat.cpp",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-27T19:37:55.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Kocsi.cpp",
-              "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Kocsi.cpp",
-              "RelativeDocumentMoniker": "Kocsi.cpp",
-              "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Kocsi.cpp",
-              "RelativeToolTip": "Kocsi.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-27T19:37:47.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DynArray.cpp",
-              "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.cpp",
-              "RelativeDocumentMoniker": "DynArray.cpp",
-              "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\DynArray.cpp",
-              "RelativeToolTip": "DynArray.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-27T19:37:32.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "menu.h",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\menu.h",
               "RelativeDocumentMoniker": "menu.h",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\menu.h",
               "RelativeToolTip": "menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-27T19:37:19.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "menu.cpp",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\menu.cpp",
               "RelativeDocumentMoniker": "menu.cpp",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\menu.cpp",
               "RelativeToolTip": "menu.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAlwA8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAtwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-27T19:37:10.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Ido.cpp",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Ido.cpp",
               "RelativeDocumentMoniker": "Ido.cpp",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Ido.cpp",
               "RelativeToolTip": "Ido.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-27T19:34:31.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T19:34:31.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Megallo.cpp",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Megallo.cpp",
               "RelativeDocumentMoniker": "Megallo.cpp",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\Megallo.cpp",
               "RelativeToolTip": "Megallo.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-27T19:31:42.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T19:31:42.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "megallo.h",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\megallo.h",
               "RelativeDocumentMoniker": "megallo.h",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\megallo.h",
               "RelativeToolTip": "megallo.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-15T13:58:26.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "ido.h",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\ido.h",
               "RelativeDocumentMoniker": "ido.h",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\ido.h",
               "RelativeToolTip": "ido.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-15T09:19:53.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\denes\\Documents\\prog\\nhf2\\nhf\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-15T09:17:59.266Z",
               "EditorCaption": ""

@@ -7,8 +7,8 @@ class Jegy {
 public:
 	Jegy(int id = 0, int ar = 0, int jaratszam = 0): id(id), ar(ar), jaratszam(jaratszam){}
 	Jegy(const Jegy& rhs) : id(rhs.id), ar(rhs.ar), jaratszam(rhs.jaratszam) {}
-
 	virtual void kiir(std::ostream& os) const;
+	virtual ~Jegy() = default;
 };
 
 

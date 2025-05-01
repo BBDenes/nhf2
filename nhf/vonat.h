@@ -9,14 +9,14 @@
 class Vonat {
 	int id;
 	std::string nev;
-	Ido keses;
 	DynArray<Kocsi> kocsik;
 	DynArray<Megallo> megallok;
+	Ido keses;
 public:
-	Vonat(int id = 0, std::string n = "", DynArray<Kocsi> kocsik = DynArray<Kocsi>(), DynArray<Megallo> mg = DynArray<Megallo>(), Ido keses = Ido(0,0)) : id(id), nev(n), kocsik(kocsik), megallok(mg) {}
+	Vonat(int id = 0, std::string n = "", DynArray<Kocsi> kocsik = DynArray<Kocsi>(), DynArray<Megallo> mg = DynArray<Megallo>(), Ido keses = Ido(0,0)) : id(id), nev(n), kocsik(kocsik), megallok(mg), keses(keses) {}
 	int osszFerohely();
 	int getId();
-	Kocsi& operator[](int index);
+	Kocsi& operator[](size_t index);
 	//void modosit();
 	friend std::ostream& operator<<(std::ostream& os, Vonat& v);
 	friend std::istream& operator>>(std::istream& is, Vonat& v);

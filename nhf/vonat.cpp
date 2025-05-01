@@ -14,7 +14,7 @@ int Vonat::getId() {
 	return id;
 }
 
-Kocsi& Vonat::operator[](int index) {
+Kocsi& Vonat::operator[](size_t index) {
 	//ide majd kivételkezelés
 	return kocsik[index];
 }
