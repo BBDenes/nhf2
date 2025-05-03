@@ -43,6 +43,7 @@ int main(void) {
 	test1(vonatok);
 	test2(vonatok);
 	std::cout << "\n" << vonatok.keres(vonatId(925)) << std::endl;
+	vonatok.keres(vonatId(925)).modosit();
 	//főmenü: vonat manuális hozzáadásához
 	//fomenu(vonatok);
 	

@@ -43,6 +43,7 @@ void kezeles(DynArray<Vonat>& vonatok) {
 		if (vonatok.includes(id)) {
 			std::cout << "Meglevo vonat kezelse..." << std::endl;
 			Vonat talalat = vonatok.keres(vonatId(id));
+			talalat.modosit();
 		}
 		std::cout << "Ilyen azonositoval nem letezik vonat, uj vonat letrehozasa..." << std::endl;
 

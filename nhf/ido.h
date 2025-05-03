@@ -8,6 +8,7 @@ private:
 public:
 	Ido(int h = 0, int m = 0) : ora(h), perc(m) {}
 	Ido(const Ido& i) : ora(i.ora), perc(i.perc) {}
+	
 
 	Ido& operator=(const Ido& i);
 	Ido operator+(const Ido& i) const;

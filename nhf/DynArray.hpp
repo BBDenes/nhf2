@@ -13,10 +13,10 @@ public:
 
 	size_t len() { return db; }
 	//kiírja a lista tartalmát egy ostreamre (a kiir fuggvény helyett) @return os
-	std::ostream& operator<<(std::ostream& os) {
-		for (size_t i = 0; i < db; i++)
+	friend std::ostream& operator<<(std::ostream& os, DynArray& da) {
+		for (size_t i = 0; i < da.db; i++)
 		{
-			os << *adat[i];
+			os << *(da.adat[i]);
 		}
 		return os;
 	}
@@ -39,7 +39,7 @@ public:
 
 	//törli a megadott indexű elemet a listából @param A törölni kívánt index
 	void torol(int index) {
-		T* tmp = new T*[db-1];
+		T** tmp = new T*[db-1];
 		size_t uj_i = 0;
 		for (size_t i = 0; i < db; i++) {
 			if (i != index) {
@@ -88,7 +88,29 @@ public:
 				return *adat[i];
 			}
 		}
-		throw std::exception;
+		//valamit throwoljunk itt majd
+	}
+
+	void insert(const T& ujElem, size_t index = -1) {
+		index == -1 ? index = db - 1 : index = index;
+		if (index >= db || index < 0) {
+			throw std::out_of_range("Helytelen index!");
+		}
+
+		T** tmp = new T * [db + 1];
+
+		
+		for (size_t i = 0; i < index; ++i) {
+			tmp[i] = adat[i];
+		}
+		tmp[index] = new T(ujElem);
+		for (size_t i = index; i < db; ++i) {
+			tmp[i + 1] = adat[i];
+		}
+
+		delete[] adat;
+		adat = tmp;
+		++db;
 	}
 
 	void clear() {

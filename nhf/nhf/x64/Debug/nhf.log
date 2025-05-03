@@ -1,3 +1,10 @@
-﻿  main.cpp
-C:\Users\denes\Documents\prog\nhf2\nhf\DynArray.hpp(91,1): warning C4715: 'DynArray<Vonat>::keres<vonatId>': not all control paths return a value
+﻿  DynArray.cpp
+  Kocsi.cpp
+  main.cpp
+  menu.cpp
+  vonat.cpp
+C:\Users\denes\Documents\prog\nhf2\nhf\vonat.cpp(79,21): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+C:\Users\denes\Documents\prog\nhf2\nhf\DynArray.hpp(92,1): warning C4715: 'DynArray<Vonat>::keres<vonatId>': not all control paths return a value
+C:\Users\denes\Documents\prog\nhf2\nhf\DynArray.hpp(92,1): warning C4715: 'DynArray<Vonat>::keres<vonatId>': not all control paths return a value
   nhf.vcxproj -> C:\Users\denes\Documents\prog\nhf2\nhf\x64\Debug\nhf.exe

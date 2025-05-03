@@ -16,8 +16,9 @@ public:
 	Vonat(int id = 0, std::string n = "", DynArray<Kocsi> kocsik = DynArray<Kocsi>(), DynArray<Megallo> mg = DynArray<Megallo>(), Ido keses = Ido(0,0)) : id(id), nev(n), kocsik(kocsik), megallok(mg), keses(keses) {}
 	int osszFerohely();
 	int getId();
+	DynArray<Megallo> getMegallok();
 	Kocsi& operator[](size_t index);
-	//void modosit();
+	void modosit();
 	friend std::ostream& operator<<(std::ostream& os, Vonat& v);
 	friend std::istream& operator>>(std::istream& is, Vonat& v);
 };

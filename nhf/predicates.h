@@ -12,6 +12,17 @@ private:
 	int i;
 };
 
+struct Indulas {
+	Indulas(std::string nev): str(nev){}
+
+	template<typename T>
+	bool operator()(const T& x) {
+		return x.getMegallok()[0].getNev() == str;
+	}
+private:
+	std::string str;
+};
+
 
 
 
