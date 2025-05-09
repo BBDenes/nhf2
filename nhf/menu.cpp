@@ -3,36 +3,71 @@
 #include "kocsi.h"
 #include "vonat.h"
 #include "predicates.h"
+#include "segedfv.h"
 
-void jegyvasarlas() {}
+void jegyvasarlas(DynArray<Vonat>& vonatok) {
+	std::cout << "Adja meg a kiindulo allomast: ";
+	std::string start;
+	std::string end;
+	std::cin.ignore();
+	std::getline(std::cin, start);
+	std::cout << std::endl << "Adja meg a vegallomast: ";
+	std::getline(std::cin, end);
 
-//bemenetek kezelésére @param maxInd: a maximum index ami még elfogadható
-int beker(int maxInd) {
-	int c;
-	std::cin >> c;
-	//input ellenőrzés
-	return c;
+	DynArray<Vonat> szurt = vonatok.filter(Indulas(start));
+	szurt = szurt.filter(Vegallomas(end));
+	std::cout << "Az elerheto vonatok:\n" << szurt << std::endl;
+
+	std::cout << "Melyik azonositoju vonatra szeretne jegyet venni?: ";
+	int choice = beker(-1);
+	try
+	{
+		Vonat aktualis = vonatok.keres(vonatId(choice));
+		std::string nev;
+		std::cout << "Adja meg a nevet: ";
+		std::getline(std::cin, nev);
+		int kocsi, szek;
+		DynArray<Kocsi> kocsik = aktualis.getKocsik();
+		std::cout << "A vonaton talalhato kocsik:\n" << kocsik << std::endl;
+	
+		do {
+			std::cout << "Melyik kocsiba szeretne foglalni?: ";
+			std::cin >> kocsi;
+			std::cout << std::endl;
+
+		} while (!(kocsik.includes(kocsi)));
+		Kocsi aktKocsi = kocsik.keres(vonatId(kocsi));
+		aktKocsi.jegyHozzaad();
+		
+	}
+	catch (const std::exception& e)
+	{
+		std::cerr << "HIBA: " << e.what() << std::endl;
+		return;
+	}
+
 }
 
 void fomenu(DynArray<Vonat>& vonatok) {
-	std::cout << "Fomenu - Valasztani a menupont sorszamaval lehet, kilepeshez -1\n"
-		<< "\t1. Vonatjegy vasarlasa\n" << "\t2. Vonatok kezelese" << std::endl;
-	int choice = beker(2);
-
-	if (choice == -1)
-	{
-		exit(1);
-	}
-	else if (choice == 1) {
-		jegyvasarlas();
-	}
-	else if (choice == 2) {
-		kezeles(vonatok);
-	}
+	std::string choice;
+	do {
+		std::cout << "Fomenu - Valasztani a menupont sorszamaval lehet, kilepeshez -1\n"
+			<< "\t1. Vonatjegy vasarlasa\n" << "\t2. Vonatok kezelese" << std::endl;
+		std::getline(std::cin, choice);
+		if (choice == "1") {
+			jegyvasarlas(vonatok);
+		}
+		else if (choice == "2") {
+			kezeles(vonatok);
+		}
+		else if(choice != "-1") {
+			std::cout << "Nem megfelelo menupont!" << std::endl;
+		}
+	} while (choice != "-1");
 }
 
 void kezeles(DynArray<Vonat>& vonatok) {
-	std::cout << "Mit szeretne tenni?\n" << "\t1. Vonat hozzaadasa es kezelese\n" << "\t2. Vonat eltavolitasa\n" << std::endl;
+	std::cout << "Mit szeretne tenni?\n" << "\t1. Vonat hozzaadasa es kezelese\n" << "\t2. Vonat eltavolitasa\n\t-1. Menu" << std::endl;
 	int choice;
 	std::cin >> choice;
 	if (choice == 1) {

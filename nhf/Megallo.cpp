@@ -1,6 +1,6 @@
 #include "megallo.h"
 
-std::string Megallo::getNev() {
+std::string Megallo::getNev() const {
 	return nev;
 }
 

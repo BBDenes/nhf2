@@ -37,7 +37,6 @@ Ido Ido::operator-(const Ido& i) const {
 
 int Ido::getOra() const { return ora; }
 int Ido::getPerc() const { return perc; }
-Ido Ido::get() const { return *this; }
 bool Ido::operator==(const Ido& rhs) const {
 	return (this->perc == rhs.perc && this->ora == rhs.ora);
 }

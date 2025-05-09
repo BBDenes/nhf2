@@ -17,13 +17,22 @@ struct Indulas {
 
 	template<typename T>
 	bool operator()(const T& x) {
-		return x.getMegallok()[0].getNev() == str;
+		return (x->getMegallok())[0].getNev() == str;
 	}
 private:
 	std::string str;
 };
 
+struct Vegallomas {
+	Vegallomas(std::string nev) : str(nev) {}
 
+	template<typename T>
+	bool operator()(const T& x) {
+		return x->getMegallok()[-1].getNev() == str;
+	}
+private:
+	std::string str;
+};
 
 
 #endif // !PREDICATES_H

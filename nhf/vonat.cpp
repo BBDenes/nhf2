@@ -18,6 +18,8 @@ DynArray<Megallo> Vonat::getMegallok() {
 	return megallok;
 }
 
+DynArray<Kocsi> Vonat::getKocsik() { return kocsik; }
+
 Kocsi& Vonat::operator[](size_t index) {
 	//ide majd kivételkezelés
 	return kocsik[index];

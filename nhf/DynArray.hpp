@@ -2,6 +2,7 @@
 #define DYNARRAY_H
 #include <iostream>
 #include <fstream>
+#include <string>
 
 template <typename T>
 class DynArray {
@@ -34,6 +35,7 @@ public:
 	}
 
 	T& operator[](size_t i) const {
+		if (i == -1) return *adat[db - 1];
 		return *adat[i];
 	}
 
@@ -88,12 +90,25 @@ public:
 				return *adat[i];
 			}
 		}
-		//valamit throwoljunk itt majd
+		throw std::invalid_argument("Nincs ilyen!");
+	}
+
+
+	template<typename P>
+	DynArray filter(P predicate) {
+		DynArray uj;
+		for (size_t i = 0; i < db; i++)
+		{
+			if (predicate(adat[i])) {
+				uj += *adat[i];
+			}
+		}
+		return uj;
 	}
 
 	void insert(const T& ujElem, size_t index = -1) {
 		index == -1 ? index = db - 1 : index = index;
-		if (index >= db || index < 0) {
+		if (index > db || index < 0) {
 			throw std::out_of_range("Helytelen index!");
 		}
 
@@ -122,6 +137,17 @@ public:
 		clear();
 	}
 };
+
+template<typename T>
+void adv_tokenizer(std::string str,DynArray<T>& arr, char del)
+{
+	std::stringstream stream(str);
+	std::string word;
+	while (!stream.eof()) {
+		std::getline(stream, word, del);
+		arr += 1;
+	}
+}
 
 
 #endif // !DYNARRAY_H

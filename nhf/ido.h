@@ -16,7 +16,6 @@ public:
 
 	int getOra() const;
 	int getPerc() const;
-	Ido get() const;
 	bool operator==(const Ido& rhs) const;
 
 	friend std::ostream& operator<<(std::ostream& os, const Ido& ido);

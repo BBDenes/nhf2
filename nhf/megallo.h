@@ -9,7 +9,7 @@ class Megallo {
 public:
 	Megallo(std::string nev = "") : nev(nev) {}
 	Megallo(std::string nev, Ido erk, Ido ind): nev(nev), erkezes(erk), indulas(ind){}
-	std::string getNev();
+	std::string getNev() const;
 	Ido getErkezes();
 	Ido getIndulas();
 	friend std::ostream& operator<<(std::ostream& os, Megallo& m);
