@@ -34,6 +34,15 @@ Ido Ido::operator-(const Ido& i) const {
 	return result;
 }
 
+bool Ido::operator<(const Ido& i) const{
+	if (ora != -1 && perc != -1 && i.ora != -1 && i.perc != -1) {
+		if (ora != i.ora)
+			return ora < i.ora;
+		return perc < i.perc;
+	}
+	return false;
+}
+
 
 int Ido::getOra() const { return ora; }
 int Ido::getPerc() const { return perc; }

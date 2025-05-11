@@ -27,9 +27,6 @@
     <ClCompile Include="Jegy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DynArray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Megallo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,6 +34,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="segedfv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,5 +65,16 @@
     <ClInclude Include="predicates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="segedfv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gtest_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="vonatok.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

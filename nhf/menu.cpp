@@ -9,7 +9,6 @@ void jegyvasarlas(DynArray<Vonat>& vonatok) {
 	std::cout << "Adja meg a kiindulo allomast: ";
 	std::string start;
 	std::string end;
-	std::cin.ignore();
 	std::getline(std::cin, start);
 	std::cout << std::endl << "Adja meg a vegallomast: ";
 	std::getline(std::cin, end);
@@ -22,12 +21,13 @@ void jegyvasarlas(DynArray<Vonat>& vonatok) {
 	int choice = beker(-1);
 	try
 	{
-		Vonat aktualis = vonatok.keres(vonatId(choice));
+		Vonat& aktualis = vonatok.keres(vonatId(choice));
 		std::string nev;
 		std::cout << "Adja meg a nevet: ";
+		std::cin.ignore();
 		std::getline(std::cin, nev);
-		int kocsi, szek;
-		DynArray<Kocsi> kocsik = aktualis.getKocsik();
+		int kocsi;
+		DynArray<Kocsi>& kocsik = aktualis.getKocsik();
 		std::cout << "A vonaton talalhato kocsik:\n" << kocsik << std::endl;
 	
 		do {
@@ -36,8 +36,10 @@ void jegyvasarlas(DynArray<Vonat>& vonatok) {
 			std::cout << std::endl;
 
 		} while (!(kocsik.includes(kocsi)));
-		Kocsi aktKocsi = kocsik.keres(vonatId(kocsi));
-		aktKocsi.jegyHozzaad();
+		Kocsi& aktKocsi = kocsik.keres(vonatId(kocsi));
+		aktKocsi.jegyHozzaad(aktualis.getId(), aktualis.getMegallok()[0], aktualis.getMegallok()[-1], nev);
+		std::cout << kocsik.keres(vonatId(kocsi));
+
 		
 	}
 	catch (const std::exception& e)

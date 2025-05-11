@@ -2,17 +2,20 @@
 #include <iomanip>
 #include <ctime>
 
-void Jegy::kiir(std::ostream& os){
-    time_t ts = time(NULL);
-    time(&ts);
-    os << "╔════════════════════════════════════════════╗\n";
-    os << "║                 VONATJEGY                  ║\n";
-    os << "╠════════════════════════════════════════════╣\n";
-    os << "║ Jegyazonosito :  #" << std::setw(32) << std::left << id << "║\n";
-    os << "║ Ar            :  " << std::setw(33) << std::left << (std::to_string(ar) + " Ft") << "║\n";
-    os << "║ Jaratszam     :  " << std::setw(33) << std::left << jaratszam << "║\n";
-    os << "║ Datum :  #" << std::setw(32) << std::left << ctime(&ts) << "║\n";
-    os << "╚════════════════════════════════════════════╝\n";
+int Jegy::getId() { return id; }
+void Jegy::kiir(std::ostream& os) {  
+   time_t now = time(0);  
+   struct tm datetime;  
+   localtime_s(&datetime, &now); // Correct usage of localtime_s  
+
+   os << "╔════════════════════════════════════════════╗\n";  
+   os << "║                 VONATJEGY                  ║\n";  
+   os << "╠════════════════════════════════════════════╣\n";  
+   os << "║ Jegyazonosito :  #" << std::setw(32) << std::left << id << "║\n";  
+   os << "║ Ar            :  " << std::setw(33) << std::left << (std::to_string(ar) + " Ft") << "║\n";  
+   os << "║ Jaratszam     :  " << std::setw(33) << std::left << jaratszam << "║\n";  
+   os << "║ Datum         :  " << std::setw(32) << std::left  << (std::to_string(1900 + datetime.tm_year) + "-" + std::to_string(datetime.tm_mon + 1) + "-" + std::to_string(datetime.tm_mday) + " " + std::to_string(datetime.tm_hour) + ":" + std::to_string(datetime.tm_min))  << "║\n";  
+   os << "╚════════════════════════════════════════════╝\n";  
 }
 
 int Helyjegy::getHely() { return szek; }

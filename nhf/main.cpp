@@ -6,7 +6,7 @@
 #include "vonat.h"
 #include "menu.h"
 #include "predicates.h"
-
+#include "gtest_lite.h"
 //teszt1, Hozzáad 2 tesztvonatot a listához megállókkal és 2-2 kocsival
 void test1(DynArray<Vonat>& vonatok) {
 
@@ -57,14 +57,43 @@ void keresTest(DynArray<Vonat>& vonatok) {
 	}
 }
 
+void gTetst(DynArray<Vonat>& vonatok) {
+	TEST(includes, jo_id) {
+		EXPECT_EQ(true, vonatok.includes(925));
+	}END
+
+	TEST(megallo, idoutazuas) {
+		//a legelso vonathoz megprobalunk hozzaadni egy megállót, ahol előbb indulunk, minthogy megérkeznénk
+		EXPECT_THROW(vonatok[0].getMegallok() += Megallo("Teszt", Ido(12, 21), Ido(11, 12)), std::invalid_argument);
+	}END
+
+	TEST(vonat, idoutazuas) {
+		//egy olyan vonatot próbálunk hozzáadni, ami előbb ér a végállomásra, mint amikor indul
+		DynArray<Megallo> tesztmegallok;
+		tesztmegallok += Megallo("Indulas", Ido(-1, -1), Ido(12, 21));
+		tesztmegallok += Megallo("Vegallomas", Ido(11, 20), Ido(-1, -1));
+		EXPECT_THROW(vonatok += Vonat(123, "Teszt", DynArray<Kocsi>(), tesztmegallok, Ido(0, 0)), std::invalid_argument);
+	}END
+
+	TEST(keres, rossz_id) {
+		EXPECT_THROW(vonatok.keres(vonatId(10)), std::invalid_argument);
+	}END
+
+}
+
 int main(void) {
 
 	DynArray<Vonat> vonatok;
 
-	test1(vonatok);
+	//test1(vonatok);
 	//test2(vonatok);
 	//filterTest(vonatok);
-	keresTest(vonatok);
+	//keresTest(vonatok);
+	//gTetst(vonatok);
+
+	std::ifstream f("vonatok.txt");
+	f >> vonatok;
+	std::cout << vonatok;
 
 	//főmenü: vonat manuális hozzáadásához
 	fomenu(vonatok);

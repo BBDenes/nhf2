@@ -1,4 +1,7 @@
 #include "vonat.h"
+#include <sstream>
+
+int Vonat::jegyId = 0;
 
 int Vonat::osszFerohely() {
 	size_t hossz = kocsik.len();
@@ -14,11 +17,11 @@ int Vonat::getId() {
 	return id;
 }
 
-DynArray<Megallo> Vonat::getMegallok() {
+DynArray<Megallo>& Vonat::getMegallok() {
 	return megallok;
 }
 
-DynArray<Kocsi> Vonat::getKocsik() { return kocsik; }
+DynArray<Kocsi>& Vonat::getKocsik() { return kocsik; }
 
 Kocsi& Vonat::operator[](size_t index) {
 	//ide majd kivételkezelés
@@ -92,6 +95,55 @@ void Vonat::modosit()
 	}
 }
 
+void Vonat::beolvas(std::istream& is) {
+	std::string sor;
+	std::getline(is, sor);
+	std::stringstream ss(sor);
+	std::string idStr, nevStr, kesesStr;
+
+	std::getline(ss, idStr, ';');
+	std::getline(ss, nevStr, ';');
+	std::getline(ss, kesesStr);
+
+	id = std::stoi(idStr);
+	nev = nevStr;
+	keses = Ido(kesesStr);
+
+	std::getline(is, sor); // \n beolvas
+
+	kocsik = DynArray<Kocsi>();
+	while (std::getline(is, sor) && !sor.empty()) {
+		std::stringstream kss(sor);
+		std::string idS, feroS, kereS, bicajS;
+		std::getline(kss, idS, ';');
+		std::getline(kss, feroS, ';');
+		std::getline(kss, kereS, ';');
+		std::getline(kss, bicajS);
+
+		int kid = std::stoi(idS);
+		int fero = std::stoi(feroS);
+		int kere = std::stoi(kereS);
+		int bicaj = std::stoi(bicajS);
+		kocsik += Kocsi(kid, fero, kere, bicaj);
+	}
+
+	std::getline(is, sor); // \n kivétel
+
+	megallok = DynArray<Megallo>();
+	while (std::getline(is, sor) && !sor.empty()) {
+		std::stringstream mss(sor);
+		std::string nev, erk, ind;
+		std::getline(mss, nev, ';');
+		std::getline(mss, erk, ';');
+		std::getline(mss, ind);
+
+		Ido erkezes = erk != "-1 -1" ? Ido(erk) : Ido(-1, -1); // vagy Ido::ervenytelen()
+		Ido indulas = ind != "-1 -1" ? Ido(ind) : Ido(-1, -1);
+		megallok += Megallo(nev, erkezes, indulas);
+	}
+
+}
+
 std::ostream& operator<<(std::ostream& os, Vonat& v) {
 	os << "Vonat ID: " << v.id << " Nev: " << v.nev << " Keses: " << v.keses << "\nKocsik: " << std::endl;
 	for (size_t i = 0; i < v.kocsik.len(); i++)
@@ -107,6 +159,6 @@ std::ostream& operator<<(std::ostream& os, Vonat& v) {
 }
 
 std::istream& operator>>(std::istream& is, Vonat& v) {
-	std::cout << "Work in progress..." << std::endl;
+	v.beolvas(is);
 	return is;
 }

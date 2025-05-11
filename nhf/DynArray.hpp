@@ -28,6 +28,7 @@ public:
 		{
 			tmp[i] = adat[i];
 		}
+		
 		tmp[db] = new T(rhs);
 		delete[] adat;
 		adat = tmp;
@@ -133,6 +134,40 @@ public:
 		delete[] adat;
 	}
 
+	friend std::istream& operator>>(std::istream& is, DynArray& da) {
+		int dbInt;
+		try {
+			std::string dbStr;
+			std::getline(is, dbStr);
+			std::cout << dbStr.c_str() << std::endl;
+			dbInt = atoi(dbStr.c_str());
+
+		}
+		catch (std::exception& e) {
+			std::cerr << "HIBA A vonatok szamanak beolvasasanal!: " << e.what() << std::endl;
+			return is;
+		}
+
+		
+
+		for (size_t i = 0; i < dbInt; ++i) {
+			T obj;
+			try
+			{
+				is >> obj;
+
+			}
+			catch (const std::exception& e)
+			{
+				std::cerr << "HIBA A(z) " << i << ". vonat beolvasasanal! " << e.what() << std::endl;
+				throw std::exception("Fajlbeolvasas nem sikerult!");
+				break;
+			}
+			da += obj;
+		}
+		return is;
+	}
+
 	~DynArray() {
 		clear();
 	}
@@ -148,6 +183,9 @@ void adv_tokenizer(std::string str,DynArray<T>& arr, char del)
 		arr += 1;
 	}
 }
+
+
+
 
 
 #endif // !DYNARRAY_H

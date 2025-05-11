@@ -3,7 +3,6 @@
 
 #include "DynArray.hpp"
 #include "jegy.h"
-#include "segedfv.h"
 
 class Kocsi {
 	int id, ferohely, kerekesszek, kerekpar;
