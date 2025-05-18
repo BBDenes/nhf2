@@ -1,12 +1,33 @@
-1
-928;Savaria IC;00 05
+4
+925;Savaria IC;00 05
 
-411;60;2;4
-412;60;2;4
+411;50;0;0
+412;75;2;10
 
-Budapest-Keleti;-1 -1;06 40
-Budapest-Kelenfold;06 55;06 57
-Tatabanya;07 25;07 27
-Gyor;07 55;07 57
-Csorna;08 20;08 22
-Szombathely;09 10;-1 -1
+Szombathely;-1 -1;10 20
+BP_Kelenfold;14 30;-1 -1
+
+854;Topart IC;01 20
+
+411;50;0;0
+412;75;2;10
+
+BP-Deli;-1 -1;13 35
+Szekesfehervar;14 21;14 22
+Nagykanizsa;16 44;-1 -1
+
+927;Savaria IC;00 15
+
+411;50;0;0
+412;75;2;10
+
+Szombathely;-1 -1;12 20
+BP_Keleti;16 30;-1 -1
+
+928;Teszt IC;00 00
+
+410;1;1;1
+
+Teszt City;-1 -1;01 23
+Jporta;04 56;-1 -1
+

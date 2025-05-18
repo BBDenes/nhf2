@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿#include "memtrace.h"
+#include <iostream>
 #include <fstream>
 #include "DynArray.hpp"
 #include "ido.h"
@@ -7,8 +8,11 @@
 #include "menu.h"
 #include "predicates.h"
 #include "gtest_lite.h"
-//teszt1, Hozzáad 2 tesztvonatot a listához megállókkal és 2-2 kocsival
-void test1(DynArray<Vonat>& vonatok) {
+
+
+#ifndef CPORTA
+//amennyiben a fájlbeolvasás nem sikerül, tudjon miből dolgozni a program
+void fallback(DynArray<Vonat>& vonatok) {
 
 	//tesztadatok megadása
 
@@ -32,71 +36,26 @@ void test1(DynArray<Vonat>& vonatok) {
 
 }
 
-//megkeressük, van-e 925-ös, 854-es, és 1-es ID-jű vonat
-void test2(DynArray<Vonat>& vonatok) {
-	std::cout << "925: " << std::boolalpha << vonatok.includes(925) << ", 854: " << vonatok.includes(854) << ", 1: " << vonatok.includes(1) << std::endl;
-	
-}
+int main() {
 
-void filterTest(DynArray<Vonat>& vonatok) {
-	DynArray<Vonat> vonatok2 = vonatok.filter(Indulas("Szombathely"));
-	vonatok2 = vonatok2.filter(Vegallomas("BP_Keleti"));
-	std::cout << vonatok2 << std::endl;
-
-}
-
-void keresTest(DynArray<Vonat>& vonatok) {
+	//fájlból beolvasás teszt
+	DynArray<Vonat> vonatok;
 	try
 	{
-		Vonat aktualis = vonatok.keres(vonatId(123));
-
+		vonatok.fajlbol("vonatok.txt");
 	}
-	catch (const std::exception& e)
+	catch (const std::exception&)
 	{
-		std::cerr << "HIBA: " << e.what() << std::endl;
+		std::cout << "Teszt vonatok hasznalata... " << std::endl;
+		fallback(vonatok);
 	}
-}
 
-void gTetst(DynArray<Vonat>& vonatok) {
-	TEST(includes, jo_id) {
-		EXPECT_EQ(true, vonatok.includes(925));
-	}END
-
-	TEST(megallo, idoutazuas) {
-		//a legelso vonathoz megprobalunk hozzaadni egy megállót, ahol előbb indulunk, minthogy megérkeznénk
-		EXPECT_THROW(vonatok[0].getMegallok() += Megallo("Teszt", Ido(12, 21), Ido(11, 12)), std::invalid_argument);
-	}END
-
-	TEST(vonat, idoutazuas) {
-		//egy olyan vonatot próbálunk hozzáadni, ami előbb ér a végállomásra, mint amikor indul
-		DynArray<Megallo> tesztmegallok;
-		tesztmegallok += Megallo("Indulas", Ido(-1, -1), Ido(12, 21));
-		tesztmegallok += Megallo("Vegallomas", Ido(11, 20), Ido(-1, -1));
-		EXPECT_THROW(vonatok += Vonat(123, "Teszt", DynArray<Kocsi>(), tesztmegallok, Ido(0, 0)), std::invalid_argument);
-	}END
-
-	TEST(keres, rossz_id) {
-		EXPECT_THROW(vonatok.keres(vonatId(10)), std::invalid_argument);
-	}END
-
-}
-
-int main(void) {
-
-	DynArray<Vonat> vonatok;
-
-	//test1(vonatok);
-	//test2(vonatok);
-	//filterTest(vonatok);
-	//keresTest(vonatok);
-	//gTetst(vonatok);
-
-	std::ifstream f("vonatok.txt");
-	f >> vonatok;
 	std::cout << vonatok;
-
-	//főmenü: vonat manuális hozzáadásához
 	fomenu(vonatok);
 	
+	vonatok.fajlba("vonatokKi.txt");
 
+	return 0;
 }
+
+#endif

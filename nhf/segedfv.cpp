@@ -1,15 +1,28 @@
-﻿#include "segedfv.h"
+﻿#include "memtrace.h"
+#include "segedfv.h"
 #include <iostream>
-int beker(int maxInd) {
-	int c;
-	std::cin >> c;
-	//input ellenőrzés
-	return c;
+#include <ctime>
+
+
+int beker(std::istream& is) {
+	std::string c;
+	int i;
+	std::getline(std::cin, c);
+	try
+	{
+		i = std::stoi(c);
+
+	}
+	catch (const std::exception&)
+	{
+		return -1;
+	}
+	return i;
 }
 
+
 int veletlenSzam(int also, int felso) {
-	 static std::random_device rd;
-	 static std::mt19937 gen(rd());
-	 std::uniform_int_distribution<> dist(also, felso);
-	 return dist(gen);
+	srand(time(NULL)); 
+	int finalNum = std::rand() % (also - felso + 1) + also;
+	return finalNum;
 }

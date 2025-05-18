@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);MEMTRACE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -132,8 +132,10 @@
     <ClCompile Include="Kocsi.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Megallo.cpp" />
+    <ClCompile Include="memtrace.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="segedfv.cpp" />
+    <ClCompile Include="teszt.cpp" />
     <ClCompile Include="vonat.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +145,7 @@
     <ClInclude Include="jegy.h" />
     <ClInclude Include="kocsi.h" />
     <ClInclude Include="megallo.h" />
+    <ClInclude Include="memtrace.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="predicates.h" />
     <ClInclude Include="segedfv.h" />

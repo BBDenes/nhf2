@@ -1,6 +1,13 @@
+#include "memtrace.h"
 #include "ido.h"
 #include <iomanip>
 
+Ido::Ido(const std::string& ido) {
+	std::string oraStr = ido.substr(0, 2);
+	std::string percStr = ido.substr(3, 2);
+	ora = std::stoi(oraStr);
+	perc = std::stoi(percStr);
+}
 
 Ido& Ido::operator=(const Ido& i) {
 	if (this != &i) {
@@ -50,7 +57,11 @@ bool Ido::operator==(const Ido& rhs) const {
 	return (this->perc == rhs.perc && this->ora == rhs.ora);
 }
 
+void Ido::fajlba(std::ostream& os) const {
+	os << std::setw(2) << std::setfill('0') << ora << ' ' << std::setw(2) << std::setfill('0') << perc;
+}
+
 std::ostream& operator<<(std::ostream& os, const Ido& ido) {
-	os << std::setw(2) << std::setfill('0') << ido.ora << ":" << std::setw(2) << std::setfill('0') << ido.perc;
+	os << std::right << std::setw(2) << std::setfill('0') << ido.ora << ":" << std::setw(2) << std::setfill('0') << ido.perc;
 	return os;
 }

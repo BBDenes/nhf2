@@ -1,5 +1,7 @@
-﻿  main.cpp
-C:\Users\denes\Documents\prog\nhf2\nhf\main.cpp(67,3): warning C4101: 'e': unreferenced local variable
-C:\Users\denes\Documents\prog\nhf2\nhf\main.cpp(75,3): warning C4101: 'e': unreferenced local variable
-C:\Users\denes\Documents\prog\nhf2\nhf\main.cpp(79,3): warning C4101: 'e': unreferenced local variable
+﻿  Kocsi.cpp
+  main.cpp
+  menu.cpp
+  teszt.cpp
+  vonat.cpp
+  Generating Code...
   nhf.vcxproj -> C:\Users\denes\Documents\prog\nhf2\nhf\x64\Debug\nhf.exe
